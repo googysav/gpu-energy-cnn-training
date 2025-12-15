@@ -12,7 +12,7 @@ from torchvision import datasets, transforms
 
 from src.model import SimpleCNN
 from src.metrics import RunMetrics
-from src.train_eval import train_one_epoch, evaluate
+from src.training_eval import train_one_epoch, evaluate
 
 #
 # Main experiment runner
