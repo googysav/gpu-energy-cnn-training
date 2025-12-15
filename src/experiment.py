@@ -14,12 +14,6 @@ from src.model import SimpleCNN
 from src.metrics import RunMetrics
 from src.train_eval import train_one_epoch, evaluate
 
-## Googly drive access (for saving results)
-from google.colab import drive
-drive.mount("/content/drive")
-
-RESULTS_PATH = "/content/drive/MyDrive/cifar_energy_results.json"
-
 #
 # Main experiment runner
 #
