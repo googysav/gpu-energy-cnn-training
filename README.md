@@ -31,7 +31,7 @@ These findings are discussed in detail in the accompanying report.
 # Repository Structure
 ```text
 ├── report/
-│   └── Analysis of Cumulative GPU Energy Consumption Accross CNN Architectures.pdf
+│   └── Analysis_of_Cumulative_GPU_Energy_Consumption_Accross_CNN_Architectures.pdf
 ├── src/
 │   ├── data.py            # CIFAR-10 loading and preprocessing
 │   ├── model.py           # CNN architecture definition
