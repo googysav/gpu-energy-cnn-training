@@ -10,12 +10,6 @@ import torch.optim as optim
 from torch.utils.data import DataLoader
 from torchvision import datasets, transforms
 
-## Googly drive access (for saving results)
-from google.colab import drive
-drive.mount("/content/drive")
-
-RESULTS_PATH = "/content/drive/MyDrive/cifar_energy_results.json"
-
 #
 # Creates models and convolution/pooling stack
 #
