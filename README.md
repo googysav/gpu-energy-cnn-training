@@ -74,5 +74,6 @@ Limitations and improvements are discussed in the report.
 
 # Report
 The full report discussing theory, methodology, results, discussion, and final conclusion is available here:
+[Analysis of Cumulative GPU Energy Consumption Across CNN Architecture Models (PDF)] file:///C:/Documents/University/Portfolio/Reports%20and%20Projects/Analysis%20of%20Cumulative%20GPU%20Energy%20Consumption%20Across%20CNN%20Architecture%20Models.pdf
 
 
