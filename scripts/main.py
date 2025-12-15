@@ -22,7 +22,7 @@ FIGURES_DIR = "figures"
 #
 def main():
     #Model variables
-    epochs = 2
+    epochs = 30
     batch_size = 128
     lr = 0.1
     weight_decay = 5e-4
