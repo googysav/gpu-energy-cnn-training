@@ -65,7 +65,9 @@ These are intended as smoke tests, and do not reproduce GPU energy values due to
 
 # Notes on Energy Estimation
 - Energy is calculated as:
+```text
 Energy (kWh) = GPU Power (W) × Time (hours) / 1000
+```
 - GPU power output is assumed constant at 70W (NVIDIA T4 Specifications)
 - This enables comparative analysis but supresses any results surrounding transient power variation
 Limitations and improvements are discussed in the report.
