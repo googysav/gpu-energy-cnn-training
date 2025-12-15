@@ -8,7 +8,7 @@ The project investigates how CNN feature channel width and numerical precision (
 # Project Overview:
 Modern CNN training prioritises accuracy, often overlooking computational energy cost. This project explores how architectural scale and precision choices influence energy efficiency during training.
 
-The key notions addressed include:
+Key notions addressed:
 -
 - How increased CNN channel width/depth affects accuracy, loss convergence, and energy use
 - The benefits and detriments of mixed-precision on lightweight CNN architectures
