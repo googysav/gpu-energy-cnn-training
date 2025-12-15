@@ -13,6 +13,7 @@ from torch.utils.data import DataLoader
 from torchvision import datasets, transforms
 
 RESULTS_PATH = "results/cifar_energy_results.json"
+FIGURES_DIR = "figures"
 
 #
 # Entrypoint and model definitions
@@ -152,6 +153,9 @@ def main():
         json.dump([asdict(m) for m in metrics_list], f, indent=2)
 
     print("Saved results to", RESULTS_PATH)
+
+    plot_results(RESULTS_PATH, FIGURES_DIR, show=True)
+    print("Saved figures to", FIGURES_DIR)
 
 
 if __name__ == "__main__":
