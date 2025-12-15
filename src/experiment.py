@@ -37,7 +37,8 @@ def run_experiment(
     model = SimpleCNN(num_classes=10, width=width).to(device)
     criterion = nn.CrossEntropyLoss()
     optimizer = optim.SGD(model.parameters(), lr=base_lr, momentum=0.9, weight_decay=weight_decay)
-    scaler = torch.cuda.amp.GradScaler() if use_amp and device.type == "cuda" else None
+    use_amp = bool(use_amp and device.type == "cuda")
+    scaler = torch.cuda.amp.GradScaler() if use_amp else None
 
     total_start = time.time() #Start time for total model runtime
 
