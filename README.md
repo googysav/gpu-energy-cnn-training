@@ -43,7 +43,7 @@ These findings are discussed in detail in the accompanying report.
 │   ├── main.py            # Entry point for running experiments
 │   └── plots.py           # Result visualisation
 │
-├── results/               # Generated plots
+├── results/               # Generated experiment outputs and plots
 │   ├── energy.png
 │   ├── energy_gradients.png
 │   ├── training_accuracy.png
