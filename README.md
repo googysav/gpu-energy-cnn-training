@@ -29,20 +29,23 @@ Key conclusions from the experiments include:
 These findings are discussed in detail in the accompanying report.
 
 # Repository Structure
+```text
+.
 ├── src/
-│   ├── data.py           # CIFAR-10 loading and preprocessing
-│   ├── model.py          # CNN architecture definition
-│   ├── training_eval.py  # Training and validation logic
-│   ├── experiment.py     # Experiment orchestration and metric tracking
-│   └── metrics.py        # Dataclass for storing results
+│   ├── data.py            # CIFAR-10 loading and preprocessing
+│   ├── model.py           # CNN architecture definition
+│   ├── training_eval.py   # Training and validation logic
+│   ├── experiment.py      # Experiment orchestration and metric tracking
+│   └── metrics.py         # Dataclass for storing results
 │
 ├── scripts/
-│   ├── main.py           # Entry point for running experiments
-│   └── plots.py          # Result visualisation
+│   ├── main.py            # Entry point for running experiments
+│   └── plots.py           # Result visualisation
 │
-├── results/              # Generated JSON experiment outputs
-├── figures/              # Generated plots
+├── results/               # Generated JSON experiment outputs
+├── figures/               # Generated plots
 └── README.md
+```
 
 # Reproducibility
 Full Experiment (GPU)
