@@ -1,7 +1,9 @@
 ## Imports
 import time
 from dataclasses import dataclass, asdict
-import matplotlib.pyplot as plt
+import json
+from dataclasses import asdict
+from pathlib import Path
 
 ## Pytorch Imports
 import torch
@@ -9,6 +11,8 @@ import torch.nn as nn
 import torch.optim as optim
 from torch.utils.data import DataLoader
 from torchvision import datasets, transforms
+
+RESULTS_PATH = "results/cifar_energy_results.json"
 
 #
 # Entrypoint and model definitions
@@ -143,9 +147,9 @@ def main():
         )
 
     # Save to json for visualisation
-    import json
+    Path(RESULTS_PATH).parent.mkdir(parents=True, exist_ok=True)
     with open(RESULTS_PATH, "w") as f:
-      json.dump([asdict(m) for m in metrics_list], f, indent=2)
+        json.dump([asdict(m) for m in metrics_list], f, indent=2)
 
     print("Saved results to", RESULTS_PATH)
 
